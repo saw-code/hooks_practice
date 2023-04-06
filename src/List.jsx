@@ -23,7 +23,7 @@ export const List = () => {
     console.log('КОМПОНЕНТ ОБНОВИЛСЯ!')
   })
 
-  // componentDidMountUpdate + componentWillUnmount
+  // componentDidMountUpdate + componentWillUnmount (отображается только один раз)
   useEffect(() => {
     console.log('КОМПОНЕНТ ОТОБРАЗИЛСЯ!')
     return () => {
