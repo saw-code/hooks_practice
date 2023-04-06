@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {List} from "../List";
+import {List} from "../../List";
 
 export const UseEffectExample = () => {
   const [visibleList, setVisibleList] = useState(true)

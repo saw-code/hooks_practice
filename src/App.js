@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {UseStateExample} from "./components/UseStateExample";
-import {UseEffectExample} from "./components/UseEffectExample";
-import {MemoAndUseMemoExample} from "./components/MemoAndUseMemoExample";
+// import {UseStateExample} from "./components/UseStateExample/UseStateExample";
+import {UseEffectExample} from "./components/UseEffectExample/UseEffectExample";
+import {MemoAndUseMemoExample} from "./components/MemoAndUseMemoExample/MemoAndUseMemoExample";
 
 function App() {
 
