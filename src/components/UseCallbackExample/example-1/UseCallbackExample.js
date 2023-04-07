@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import './useCallback.css';
 
 // сохраняет в переменной timerRef состояние которое не изменяется до нажатия кнопки Стоп
@@ -13,14 +13,18 @@ import './useCallback.css';
 export const UseCallbackExample = () => {
   const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
   const ulRef = useRef()
+  const numbersRef = useRef()
+
+  numbersRef.current = numbers
 
   const addNumber = () => {
     setNumbers(prev => [...prev, prev[prev.length - 1] + 1]);
   };
-
-  const handleScroll = () => {
-    console.log('Был скролл!')
-  }
+// при первом рендере благодаря useCallback сохраняется ссылка на эту функцию и каждый раз будет ее возвращать
+// и в start и в stop функциях
+  const handleScroll = useCallback(() => {
+    console.log('Был скролл!', numbersRef.current )
+  }, [])
 
   const start = () => {
     ulRef.current.addEventListener('scroll', handleScroll)
