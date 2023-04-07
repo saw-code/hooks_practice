@@ -4,6 +4,7 @@ import './App.css';
 import {UseEffectExample} from "./components/UseEffectExample/UseEffectExample";
 import {MemoAndUseMemoExample} from "./components/MemoAndUseMemoExample/MemoAndUseMemoExample";
 import {UseRefExample} from "./components/UseRefExample/UseRefExample";
+import {UseCallbackExample} from "./components/UseCallbackExample/UseCallbackExample";
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
       {/*<UseStateExample/>*/}
       {/*<UseEffectExample/>*/}
       {/*<MemoAndUseMemoExample/>*/}
-      <UseRefExample/>
+      {/*<UseRefExample/>*/}
+      <UseCallbackExample/>
     </div>
   )
 }
