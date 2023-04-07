@@ -20,7 +20,6 @@ export default React.memo(function IsFive({value}) {
 }, (prevProps, nextProps) => {
   return nextProps.value !== 5 //когда вернется false тогда и произойдет ререндер
 })
-
 // Как говорили ранее React.memo делает поверхностное сравнение пропсов, еще это называется
 // Shallow Equal идет сравнение старых пропсов (prevProps) и новых пропсов(newProps)
 // и если они не изменились то компонент не будет делать ререндер иначе сделает ререндер.

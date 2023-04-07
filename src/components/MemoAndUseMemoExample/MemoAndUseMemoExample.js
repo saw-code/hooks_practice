@@ -2,10 +2,9 @@ import React, {useState} from 'react'
 import Count from './Count'
 import IsFive from './IsFive'
 
-
 // React.memo используется только для компоненты и затрагивает только изменения пропсов.
-// Если функциональный компонент обёрнут в React.memo и использует useState, useReducer или useContext,
-// он будет повторно рендериться при изменении состояния или контекста.
+// Если функциональный компонент обёрнут в React.memo и использует useState, useReducer
+// или useContext, он будет повторно рендериться при изменении состояния или контекста.
 export const MemoAndUseMemoExample = () => {
   const [count1, setCount1] = useState(0)
   const [count2, setCount2] = useState(0)
