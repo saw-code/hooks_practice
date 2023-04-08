@@ -15,8 +15,8 @@ function App() {
       {/*<UseEffectExample/>*/}
       {/*<MemoAndUseMemoExample/>*/}
       {/*<UseRefExample/>*/}
-      {/*<UseCallbackExample/>*/}
-      <UseCallbackExample2/>
+      <UseCallbackExample/>
+      {/*<UseCallbackExample2/>*/}
     </div>
   )
 }
